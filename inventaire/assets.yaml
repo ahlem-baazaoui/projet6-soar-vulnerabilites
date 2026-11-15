@@ -1,0 +1,31 @@
+# Inventaire des actifs du parc
+# exposition : internet | interne | test
+# criticite  : 1 (faible) | 2 (moyenne) | 3 (haute)
+
+- nom: web-expose
+  service: Apache httpd 2.4.49
+  port: 8080
+  exposition: internet
+  criticite: 3
+  responsable: equipe-web
+
+- nom: web-vuln
+  service: Apache httpd 2.4.49 (vulhub)
+  port: 8081
+  exposition: test
+  criticite: 1
+  responsable: equipe-secu
+
+- nom: dvwa
+  service: DVWA (PHP/MySQL)
+  port: 8082
+  exposition: internet
+  criticite: 2
+  responsable: equipe-web
+
+- nom: cache-interne
+  service: Redis 5.0.5
+  port: null
+  exposition: interne
+  criticite: 2
+  responsable: equipe-infra
