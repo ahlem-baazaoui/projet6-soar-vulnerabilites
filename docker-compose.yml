@@ -1,0 +1,34 @@
+services:
+  web-expose:
+    image: httpd:2.4.49
+    container_name: web-expose
+    networks: [parc-net]
+    ports: ["127.0.0.1:8080:80"]
+  web-vuln:
+    image: vulhub/httpd:2.4.49
+    container_name: web-vuln
+    networks: [parc-net]
+    ports: ["127.0.0.1:8081:80"]
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa
+    networks: [parc-net]
+    ports: ["127.0.0.1:8082:80"]
+  cache-interne:
+    image: redis:5.0.5
+    container_name: cache-interne
+    networks: [parc-net]
+  gitea:
+    image: gitea/gitea:1.22
+    container_name: gitea
+    environment:
+      - GITEA__security__INSTALL_LOCK=true
+    networks: [parc-net]
+    ports: ["127.0.0.1:3000:3000"]
+    volumes: ["gitea-data:/data"]
+
+networks:
+  parc-net:
+    name: parc-net
+volumes:
+  gitea-data:
