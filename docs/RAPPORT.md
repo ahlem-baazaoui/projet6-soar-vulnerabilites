@@ -1,6 +1,6 @@
 # Rapport - Projet 6 : Vulnérabilités, corriger ce qui compte et le prouver
 
-Mini-projet SOAR. Auteurs : Ahlem Baazaoui et [binome]. Encadrant : Dr. Salah Gontara.
+Mini-projet SOAR. Auteur : Ahlem Baazaoui (travail individuel). Encadrant : Dr. Salah Gontara.
 
 ## 1. Contexte et problème
 Un scanner de vulnérabilités produit des milliers de résultats, triés par

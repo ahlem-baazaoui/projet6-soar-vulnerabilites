@@ -1,7 +1,7 @@
 # Projet 6 - Vulnérabilités : corriger ce qui compte, et le prouver
 
 Mini-projet SOAR - Gestion des vulnérabilités basée sur le risque.
-Auteur : Ahlem Baazaoui (+ binôme). Cours SOAR, Dr. Salah Gontara.
+Auteur : Ahlem Baazaoui (travail individuel). Cours SOAR, Dr. Salah Gontara.
 
 ## Problème
 Un scanner produit des milliers de résultats triés par CVSS. Trier par
